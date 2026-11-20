@@ -4,3 +4,6 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
+# AI 완성본(제출 제외)
+With_AI/
