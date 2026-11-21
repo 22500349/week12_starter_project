@@ -153,6 +153,14 @@ LAB 4 는 start, stop 함수가 Timer 를 직접 만들고 끄며, Timer ID 는 
 
 ## 6.Customizing
 
+![실행 사진](screenshots/customizing_lab1.png)
+![실행 사진](screenshots/customizing_lab2.png)
+
+### App.jsx, index.html
+탭 제목을 OSS W12 Hooks Lab 에서 OSS W12 Only My Hook! 으로, 제목을 React Hooks -Open Source Studio Week12- 로, 설명 뒤에 "이해하고, 완성하고, 커스터마이징 하고" 를 붙여 변경하였 습니다. 
+
+### App.css
+타이머의 폰트 사이즈와 버튼 색을 변경하였습니다.
 
 ## 7.실제 접근 가능한 Vercel URL
 
@@ -161,15 +169,18 @@ LAB 4 는 start, stop 함수가 Timer 를 직접 만들고 끄며, Timer ID 는 
 
 ### 새롭게 배운 내용 3가지
 #### useEffect
-useEffect 는 화면을 그린 뒤 실행되는 함수이고, 끝의 Dependency Array 에 따라 다시 실행되는 때가 달라지는 점이 새로웠습니다
+useEffect 는 화면을 그린 뒤 실행되는 함수이고, 끝의 Dependency Array 에 따라 다시 실행되는 때가 달라지는 점이 새로웠습니다.
 
 #### Cleanup
-Effect 에서 함수를 return 해 두면 React 가 다음 Effect 직전이나 컴포넌트가 사라질 때 대신 실행해 주며, setInterval 처럼 브라우저에 맡긴 일은 여기서 꼭 꺼 줘야 했습니다
+Effect 에서 함수를 return 해 두면 React 가 다음 Effect 직전이나 컴포넌트가 사라질 때 대신 실행해 주며, setInterval 처럼 브라우저에 맡긴 일은 여기서 꼭 꺼 줘야 했습니다.
 
 #### useRef
-useRef 는 input 요소를 직접 가리키거나(LAB 3) Timer ID 를 기억해 둘 수 있었고(LAB 4), 값을 바꿔도 다시 렌더링되지 않는 점이 useState 와 가장 달랐습니다
+useRef 는 input 요소를 직접 가리키거나(LAB 3) Timer ID 를 기억해 둘 수 있었고(LAB 4), 값을 바꿔도 다시 렌더링되지 않는 점이 useState 와 가장 달랐습니다.
 
 ### 어려웠던 점과 해결 방법
-Stop 을 누르면 if (!running) return; 이 Timer 를 멈춘다고 생각했지만, 실제로 Timer 를 끄는 것은 Cleanup 의 clearInterval 이었습니다
+Stop 을 누르면 if (!running) return; 이 Timer 를 멈춘다고 생각했지만, 실제로 Timer 를 끄는 것은 Cleanup 의 clearInterval 이었습니다.
+이 구조에 대해 AI에게 질문을 주고 받으며 이해할 수 있었습니다
 
 ### AI 활용 내용 및 느낀 점
+먼저 코드 분석중 실행 구조가 이해가 되지 않거나 의문이 드는 지점들은 질문하며 주석과 수정을 달아나갔습니다, 이후 커스터마이징 단계에서 CSS 수정을 위해 AI에게 수정하기 편하도록 줄을 나누어 달라 하였으며, 사진 촬영을 부탁했습니다.
+전체적으로 코드 구현 자체는 저번주 보더 확연히 쉬웠던것 같습니다, 하지만 여전히 알쏭달쏭한 부분들이 많았던것도 사실이라 이를 대조해 나가고 질문하며 알아가는 과정이 정말 재미있었습니다.
