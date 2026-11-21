@@ -163,7 +163,7 @@ LAB 4 는 start, stop 함수가 Timer 를 직접 만들고 끄며, Timer ID 는 
 타이머의 폰트 사이즈와 버튼 색을 변경하였습니다.
 
 ## 7.실제 접근 가능한 Vercel URL
-
+https://week12-starter-project-gowk.vercel.app
 
 ## 8.Weekly Review
 
